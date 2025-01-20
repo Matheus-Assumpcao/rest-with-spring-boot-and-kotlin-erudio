@@ -1,10 +1,19 @@
+# Arquivos de ajuda
 HELP.md
+
+# Pastas de build e dependências
 target/
-!.mvn/wrapper/maven-wrapper.jar
+build/
+out/
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### STS ###
+# Wrapper do Maven
+!.mvn/wrapper/maven-wrapper.jar
+
+### Spring Tool Suite (STS) ###
 .apt_generated
 .classpath
 .factorypath
@@ -14,7 +23,7 @@ target/
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -25,9 +34,66 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log e temporários
+*.log
+*.lock
+hs_err_pid*
+replay_pid*
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Configurações de ambiente sensíveis
+.env
+*.env
+*.properties
+application.yml
+application-*.yml
+application.properties
+application-*.properties
+secrets.yml
+
+# Cache do Gradle
+/.gradle/
+/.gradle-cache/
+/gradle-app.setting
+
+# Arquivos do Maven
+/.mvn/
+/pom.xml.tag
+/pom.xml.releaseBackup
+/pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Arquivos específicos do Spring Boot
+*.h2.db
+*.mv.db
+*.db
+*.sqlite
+
+# Ferramentas de cobertura de código e relatórios
+/jacoco/
+/coverage/
+/test-output/
+/reports/
+/build/reports/
+/target/site/
+
+# Docker e Kubernetes
+docker-compose.override.yml
+*.dockerfile
+.kube/
+
+# Ferramentas de CI/CD
+/.github/
+/.jenkins/
